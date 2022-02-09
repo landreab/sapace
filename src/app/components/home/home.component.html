@@ -1,0 +1,18 @@
+<p>home works!</p>
+
+<!-- Create an image carousel using NGBootstrap. Create only if images exists -->
+<ngb-carousel *ngIf="images" [interval]="5000">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="imgWrap">
+      <img [src]="image" alt="" class = "img">
+    </div>
+    <div class="carousel-caption">
+    <h3>Sapace Studios</h3>
+    <p>Here is where we would put some stats about us</p>
+    </div>
+
+  </ng-template>
+</ngb-carousel>
+<div class="separate">
+  <p>Test</p>
+</div>
