@@ -12,6 +12,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { WinterWonderlandComponent } from './components/maps/winter-wonderland/winter-wonderland.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatButtonModule} from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
       {path: '', redirectTo: '/home', pathMatch: 'full'}
 
     ]),
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
