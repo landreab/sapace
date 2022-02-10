@@ -7,7 +7,7 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  images = ["multi-arena","pararoyale","winter-wonderland" ].map((name) => `/assets/${name}.png `);
+  images = ["multi-arena","pararoyale","winter-wonderland" ].map((name) => `./assets/${name}.png `);
 
   constructor(config: NgbCarouselConfig) {
     config.showNavigationArrows = false;
